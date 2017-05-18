@@ -50,8 +50,8 @@
   
 \begin{document}
 
-% 封面
-\maketitle
+% 封面 (By Taper: 学校封面已改，请在Word中填写好新封面，输出为pdf，之后插入文件开头即可。也可在Word中新封面后留白一页，以免打印时和诚信承诺书印于同一张纸。)
+%\maketitle
 
 %特别注意，以下述顺序为准，在对应部分添加文档部件，切勿颠倒顺序：
 %本科论文的文档部件顺序是：
@@ -70,8 +70,10 @@
 	%%%%%%%%%%%%%%%%%
 	% 致谢
 	\include{chapter/honest}
+	% Preface is optional...
 	\include{chapter/chap-preface}
-	
+	% 摘要
+	\include{chapter/abstract}%此文件中含有中英文摘要
 	
 	%目录部分
 	%目录
@@ -90,8 +92,7 @@
 	%如果需要使用算法环境并列出算法索引，请加入补充宏包。
 	%\ustcloa
 	
-	% 摘要
-	\include{chapter/abstract}%此文件中含有中英文摘要
+	% For list of notations
     \include{chapter/denotation}
     
 \else
