@@ -8,12 +8,13 @@
 %       Beta
 %   Created 
 %       2014.03.26 by ywg@USTC
-%   Last Modified
+%   Modified
 %       2014.08.29 by whzecomjm@SUSTC
-%
+%   Last Modified
+%		2017.05.18 by we.taper@SUSTech
 
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesClass{sustcthesis}[2014/08/26 SUSTCthesis document class. Created: 2014.03.26 by ywg@USTC, Last Modified: 2014.08.29 by whzecomjm@SUSTC]
+\ProvidesClass{sustcthesis}[2014/08/26 SUSTech thesis document class. Created: 2014.03.26 by ywg@USTC, Last Modified: 2017.05.18 by we.taper@SUSTech]
 
 %Dew class options
 \newif\ifustc@basic\ustc@basicfalse
@@ -140,7 +141,7 @@
 	pdftitle={\ustc@entitle},%
 	pdfauthor={\ustc@author,\ustc@enauthor},%
 	pdfkeywords={},%Either put keywords here or not, as you wish.
-	pdfcreator={LaTeX using SUSTC LaTeX Thesis Template for Bachelor, created by whzecomjm}}}
+	pdfcreator={LaTeX using SUSTech LaTeX Thesis Template for Bachelor, created by whzecomjm, updated by we.taper.}}}
 \RequirePackage[numbers,sort&compress,square]{natbib}
 \def\bibfont{\wuhao}
 \setlength{\bibsep}{0pt plus1pt minus1pt}
@@ -718,7 +719,7 @@
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
   \fancyhf{}
-  \ifustc@bachelor\fancyhead[C]{\xiaowuhao{SUSTC's Dissertation for Bachelor's Degree}}\relax\else\fancyhead[C]{\small \nouppercase\leftmark}\fi
+  \ifustc@bachelor\fancyhead[C]{\xiaowuhao{Dissertation for Bachelor's Degree - SUSTech}}\relax\else\fancyhead[C]{\small \nouppercase\leftmark}\fi
   \renewcommand{\headrulewidth}{0.7pt}
 
 \renewcommand\frontmatter{%
